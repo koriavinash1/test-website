@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Anveshak </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+
+<body ng-app="anveshak" ng-controller = "base">
+   <nav class="navbar navbar-inverse navbar-fixed-top" id="topnav">
+     <div class="container-fluid">
+          <div class="logo navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#pageheader">
+              <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+            <h1><a href="#homepage">Anveshak</a></h1>
+          </div>
+          <div class ="collapse navbar-collapse" id="pageheader">
+            <ul class="nav navbar-nav navbar-right" id="headerelements">
+              <li><a href="#team">Team</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="blog">Blog</a></li>
+            </ul>
+          </div>
+     </div>
+   </nav>
+
+   <section id="homepage" style="min-height:800px;padding-bottom:40px;">
+
+   </section>
+
+   <section id = "team" style="background-color:grey;padding-bottom:40px;padding-top:40px;">
+         <div class="container" id="team_members">
+           <div class="section-heading">
+              <h2 style="text-align:center;">Team</h2>
+              <hr>
+           </div>
+
+          <div class="container-fluid" style="text-align:center;" >
+            <div class="container-fluid" style="text-align:center;">
+                <div class="col-sm-12" style="display:block;padding:0;margin:0;" ng-mouseenter="option = 0" ng-mouseleave = "option = 1">
+                   <img src="images/profile.png" class="img-circle" alt="Cinque Terre" width="200" height="200">
+                   <p id="name">Profile</p>
+                  <div ng-show="option == 0" class ="panel panel-primary" style="background-color:rgba(200, 200, 200, 0.5);   min-height:200px;width:100%; z-index:1;top:0;position:absolute;margin:0;padding:0.8;">
+                    <div class="panel-body" style="font-size:20px;">
+                      <label><strong>Module:</strong>Module</label><br>
+                      <label><strong>Description:</strong>Description</label>
+                    </div>
+                    <hr>
+
+                    <div class="container-fluid contact" style="text-align:center;">
+                      <ul class="list-inline" style="font-size:30px;">
+                        <li><a href="{[{col.tlink}]}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="{[{col.flink}]}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="{[{col.glink}]}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>   
+             </div>
+          </div>
+
+
+           <div class="container" ng-repeat="rows in teamMembers" style="margin:0;padding:0;">
+             <div class="col-sm-4" style="text-align:center;margin:0;padding:0;" ng-repeat="col in rows">
+                <div class="container-fluid" style="display:block;padding:0;margin:0;" ng-mouseenter="flag = 0" ng-mouseleave = "flag = 1">
+                   <img src="images/profile.png" class="img-circle" alt="Cinque Terre" width="200" height="200">
+                   <p id="name">{[{col.name}]}</p>
+                  <div ng-show="flag == 0" class ="panel panel-primary" style="background-color:rgba(200, 200, 200, 0.8);   min-height:200px;width:100%; z-index:1;top:0;position:absolute;margin:0;padding:0;">
+                    <div class="panel-body" style="font-size:20px;">
+                      <label><strong>Module:</strong>{[{col.module}]}</label><br>
+                      <label><strong>Description:</strong>{[{col.description}]}</label>
+                    </div>
+                    <hr>
+
+                    <div class="container-fluid contact" style="text-align:center;">
+                      <ul class="list-inline" style="font-size:30px;">
+                        <li><a href="{[{col.tlink}]}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="{[{col.flink}]}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="{[{col.glink}]}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+               
+             </div>
+           </div>
+
+         </div>
+   </section>
+
+   <section id="gallery" style="padding-bottom:80px;">
+       <div class="container" style="padding-top:40px;">
+          <div class="section-heading">
+            <h2 style="text-align:center;">Gallery</h2>
+            <hr>
+          </div><br><br>
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+              <li data-target="#carousel" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item active" ><img src="images/rover.jpg" alt="Chania"></div>
+              <div class="item"><img src="images/1.jpg" alt="Chania"></div>
+              <div class="item"><img src="images/2.jpg" alt="Chania" ></div>
+              <div class="item"><img src="images/3.jpg" alt="Chania" ></div>
+            </div>
+          </div>
+        </div>
+   </section>
+
+
+  <section id = "contact" class="contact bg-primary">
+       <div class="container-fluid" id="contactinfo" style="background-color:orange;padding-top:40px;padding-bottom:40px;">
+             <div class="section-heading">
+                <h2 style="text-align:center;">Contact Us</h2>
+                <hr>
+             </div><br>
+             <div class="container" id= "email" style="">
+                   <div class=col-sm-6>
+                       	<form>
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name" style="height:50px;font-size:20px;" />
+                          </div>
+                       	  <div class="form-group">
+                    	  	  <input type="text" class="form-control" placeholder="Email" style="height:50px;font-size:20px;" />
+                  	      </div>
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Phone Number" style="height:50px;font-size:20px;" />
+                          </div>
+                  	      <div class="form-group">
+                    	       <textarea class="form-control" rows="5" id="comment" placeholder="Message" style="height:200px;font-size:20px;"></textarea>
+                          </div>
+                        </form>
+                        <button type="button" class="btn btn-warning btn-lg" style="padding:10px 30px;">Send</button>
+                   </div>
+
+                   <div class="col-sm-6" id="contactInfo" style="padding-left:auto;margin-left:auto;">
+                        <div class="container" id="location" style="padding:40px;">
+                            <a href="https://www.google.co.in/maps/place/Indian+Institute+of+Technology+Madras/" target="_blank" style="text-decoration:None;"><span style="font-size:20px;"><i class="glyphicon glyphicon-map-marker" aria-hidden="true" style="color:red;font-size:50px;"></i><strong>Indian Institute Of Technology(IIT) Madras</strong></span></a>
+                        </div>
+                        <div class="container-fluid">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.813889683162!2d80.2339031!3d12.9908081!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x51d03851a6fd690d!2sIndian+Institute+of+Technology+Madras!5e0!3m2!1sen!2sin!4v1481430400080" width="600" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="container" id="call" style="padding:0 40px;">
+                            <span style="font-size:30px;"><i class="fa fa-phone" aria-hidden="true" style="color:blue;font-size:50px;margin:20px;"></i><strong>9999999999</strong></span>
+                        </div>
+                   </div>
+             </div><br />
+        </div>
+
+        <div class="container-fluid" style="text-align:center;background-color:black;" >
+            <ul class="list-inline list-social">
+                <li class="social-twitter">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="social-facebook">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="social-google-plus">
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+  </section>
+  <script type="text/javascript" src="Scripts/base.js"></script>
+  </body>
+  <footer style="background-color:black;">
+        <div class="container" style="text-align:center;color:white;">
+            <p><strong>&copy;2016 Anveshak. All Rights Reserved.</p></strong>
+        </div>
+    </footer>
+ </html>
