@@ -5,6 +5,7 @@ general_app.config(['$httpProvider','$interpolateProvider',function($httpProvide
     $interpolateProvider.startSymbol('{[{');
     $interpolateProvider.endSymbol('}]}');
 }]);
+var location = "";
 general_app.controller("map", function($scope,$http) {
 	$scope.height = window.innerHeight;
 	$scope.search = function(){
@@ -12,7 +13,12 @@ general_app.controller("map", function($scope,$http) {
 		console.log($scope.area);
 		console.log($scope.city);
 		console.log($scope.country);
-		$scope.location = $scope.area.toString() + $scope.city.toString() + $scope.country.toString();
-		$('#pac-input').attr('value',location);
+		location = $scope.area.toString() + $scope.city.toString() + $scope.country.toString();
+
 	};
+});
+
+general_app.controller("maplocation",function($scope,$http){
+	$('#pac-input').attr('value',location);
+	console.log(location);
 });
