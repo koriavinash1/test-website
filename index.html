@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Team Anveshak </title>
+  <title>MasterStroke</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
@@ -79,101 +79,58 @@
   <div class="wrapper">
   <div class="main">
 
-<section id="homepage" style="background-image:url(images/background.jpg);background-size:cover;" ng-style="{'min-height':height + 'px'}" >
+  <section id="homepage" style="background-image:url(images/home1.jpg);background-size:cover;" ng-style="{'min-height':height + 'px'}" >
          <nav class="navbar transparent navbar-top" id="topnav">
            <div class="container-fluid">
-                <div class="logo navbar-header">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#pageheader">
-                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                  </button>
-                  <h1><a href="#homepage" >Anveshak</a></h1>
-                </div>
-                <div class ="collapse navbar-collapse" id="pageheader">
-                  <ul class="nav navbar-nav navbar-right" id="headerelements">
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="blog">Blog</a></li>
-                  </ul>
-                </div>
+                  <h1><a href="#homepage"style="color:white;float:left;padding-left:50px;text-decoration:none;">MasterStroke!</a></h1>
            </div>
          </nav>
-        </section>
+  </section>
 
-         <section id = "team" ng-style="{'min-height':height + 'px'}" href="#team">
-               <div class="container-fluid" id="team_members">
-                 <div class="section-heading">
-                    <p style="text-align:center;font-size:32px; font-family: Lato,sans-serif;color:white">TEAM</p>
-                 </div><hr />
+  <section id="gallery" ng-style="{'min-height':height + 'px'}" href="#gallery">
+      <div class="container-fluid">
+         <div class="section-heading">
+           <p style="text-align:center;font-size:32px; color:#17232e; padding-top:40px; font-family: Lato,sans-serif;">MasterStroke live!</p><p>Let friends and family track your journey in real time.</p>
+         </div><br>
+         <div id="carousel" class="carousel slide" data-ride="carousel">
+           <ol class="carousel-indicators">
+             <li data-target="#carousel" data-slide-to="0" class="activge"></li>
+             <li data-target="#carousel" data-slide-to="1"></li>
+             <li data-target="#carousel" data-slide-to="2"></li>
+             <li data-target="#carousel" data-slide-to="3"></li>
+           </ol>
 
-                <div class="container-fluid" style="text-align:center;" >
-                  <div class="container-fluid" style="text-align:center;">
-                      <div class="col-sm-12" style="display:block;padding:0;margin:0;text-align:center;" ng-mouseenter="option = 0" ng-mouseleave = "option = 1" >
-                         <img src="images/profile.png" class="img-circle" alt="Cinque Terre" width="100" height="100">
-                         <p id="name">Profile</p>
-                         <div class="container" style="width:240px;">
-                            <div ng-show="option == 0" class ="panel-primary" style="min-height:40px;width:100%;">
-                              <div style="font-size:20px;display:inline-block;">
-                                <ul class="list-inline team_contact">
-                                  <li>Module</li><br />
-                                  <li class="twitter"><a href="{[{col.tlink}]}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                  <li class="facebook"><a href="{[{col.flink}]}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                  <li class="google-pluse"><a href="{[{col.glink}]}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                                </ul>
-                              </div>
-                            </div>
-                        </div>
-                      </div>
-                   </div>
-                </div>
+           <div class="carousel-inner" role="listbox">
+             <div class="item active" ><img src="images/home3.jpg" alt="Chania"></div>
+             <div class="item"><img src="images/garden.jpg" alt="Chania"></div>
+             <div class="item"><img src="images/school.jpg" alt="Chania" ></div>
+             <div class="item"><img src="images/market.jpg" alt="Chania" ></div>
+           </div>
+         </div>
+       </div>
+  </section>
 
+   <section id = "info" ng-style="{'min-height':height + 'px'}" style="background-image:url(images/home2.jpg);background-size:cover;" >
+     <div class="section-heading" style="padding-top:40px;">
+       <p style="text-align:center;font-size:32px; color:white; font-family: Lato,sans-serif;">Solution</p>
+     </div><hr style="opacity:0.2;" />
+     <div style="width:45%; float:right;" ng-style="{'min-height':height + 'px'}">
+       <div class="container-fluid">
+          <p style="font-size:32px;font-family:Lato;color:rgba(200,200,200, 0.5);">
+              The only solution of its kind which lets a home buyer,
 
-                 <div class="container-fluid" ng-repeat="rows in teamMembers" style="margin:0;padding:0;">
-                   <div class="col-sm-1" style="text-align:center;margin:0;padding:0;" ng-repeat="col in rows">
-                      <div class="container-fluid" style="display:block;padding:0;margin:0;" ng-mouseenter="flag = 0" ng-mouseleave = "flag = 1">
-                         <img src="images/profile.png" class="img-circle" alt="Cinque Terre" width="100" height="100">
-                         <p id="name" >{[{col.name}]}</p>
-                        <div ng-show="flag == 0" style="padding:0;margin:0;min-height:40px;width:100%;">
-                          <div style="font-size:20px;display:inline-block;">
-                            <ul class="list-inline team_contact">
-                              <li> {[{col.module}]}</li><br />
-                              <li class="twitter"><a href="{[{col.tlink}]}" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                              <li class="facebook"><a href="{[{col.flink}]}" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                              <li class="google-pluse"><a href="{[{col.glink}]}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
+              who is looking for a house to buy,<br /><strong>CREATE
 
-                   </div>
-                 </div>
+              ROUTES </strong><br /> right on his or her mobile or desktop web browser, by creating and posting routes, the
 
-               </div>
-         </section>
+              user generates content that other MasterStroke user may access and use them for
 
-         <section id="gallery" ng-style="{'min-height':height + 'px'}" href="#gallery">
-             <div class="container">
-                <div class="section-heading">
-                  <p style="text-align:center;font-size:32px; color:#17232e; font-family: Lato,sans-serif;">GALLERY</p>
-                </div><br>
-                <div id="carousel" class="carousel slide" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    <li data-target="#carousel" data-slide-to="0" class="activge"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
-                    <li data-target="#carousel" data-slide-to="3"></li>
-                  </ol>
-
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active" ><img src="images/rover.jpg" alt="Chania"></div>
-                    <div class="item"><img src="images/rover1.jpeg" alt="Chania"></div>
-                    <div class="item"><img src="images/rover1.jpeg" alt="Chania" ></div>
-                    <div class="item"><img src="images/3.jpg" alt="Chania" ></div>
-                  </div>
-                </div>
-              </div>
-         </section>
-
+              navigation to make their search experience better.
+          </p>
+      </div>
+      <a style="font-size:36px;color:white;" href="/map.html">TRY YOURSELF!!</a>
+     </div>
+   </section>
 
         <section id = "contact" class="contact bg-primary" ng-style="{'min-height': height + 'px'}" href="#contact">
              <div class="container-fluid" style="background-color:#17232e;">
@@ -233,7 +190,7 @@
                     </li>
                 </ul>
                     <div class="container" style="text-align:center;color:#17232e;">
-                        <p>&copy;2016 Anveshak. All Rights Reserved.</p>
+                        <p>&copy;2017 MasterStroke. All Rights Reserved.</p>
                     </div>
               </footer>
 

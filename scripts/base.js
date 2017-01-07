@@ -9,51 +9,5 @@ general_app.controller("base", function($scope,$http) {
 	$scope.flag=1;$scope.option=1;
 	console.log($scope.option);
 	$scope.height = window.innerHeight;
-	$scope.teamMembers = [
-							[
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'}
-
-							],
-							[
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'}
-
-							],
-							[
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'},
-								{'name':'name', 'module':'module', 'description':'description', 'flink':'flink', 'tlink':'tlink', 'glink':'glink'}
-
-								]
-						];
+	
 });
