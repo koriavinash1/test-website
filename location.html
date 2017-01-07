@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MasterStroke</title>
+    <script type="text/javascript" src="scripts/maps.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid" style="" ng-style="{'min-height':height + 'px'}" ng-controller="map">
+      <div class="section-heading">
+        <p style="text-align:center;font-size:32px; color:#17232e; padding-top:40px; font-family: Lato,sans-serif;">Search your Dream Home!.</p>
+      </div>
+      <hr>
+      <div class="col-sm-6">
+        <div class="panel-info">
+          <div class="panel-heading">Primary Details</div>
+          <div class="panel-body">
+            <label for = "area">Area:</label>
+            <input type="text" class="form-control" ng-model = "area"><br>
+            <label for = "city">City:</label>
+            <input type="text" class="form-control" ng-model = "city"></ng-model>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="panel-info">
+          <div class="panel-heading">Secondary</div>
+          <div class="panel-body">
+            <label for = "school">School near by:</label>
+            <input type="radio" name="school" value="schoollocation" ng-model="school" ng-checked = "true"/>Yes
+            <input type="radio" name="school" value="schoollocation" ng-model="school"/>No
+            <label for ="Garden">Garden near by:</label>
+            <input type="radio" name="garden" value="gardenlocation" ng-model="garden" ng-checked = "true"/>Yes
+            <input type="radio" name = "garden" value = "gardenlocation" ng-model = "garden" />No
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
