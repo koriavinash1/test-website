@@ -12,7 +12,7 @@ general_app.controller("map", function($scope,$http) {
 		console.log($scope.area);
 		console.log($scope.city);
 		console.log($scope.country);
-    if( $scope.area === "" || $scope.city === "" || $scope.country === "" || $scope.area === "undefined" || $scope.city === "undefined" || $scope.country === "undefined" ){
+    if( $scope.area === "" || $scope.city === "" || $scope.country === "" || to($scope.area) === "undefined" || to($scope.city) === "undefined" || to($scope.country) === "undefined" ){
         alert("Fill all details correctly....");
         window.location.reload();
       }
@@ -24,7 +24,9 @@ general_app.controller("map", function($scope,$http) {
     }
 	};
 });
-
+function to(variab){
+  return (typeof variab);
+}
 function setcookie(name, value, days)
 {
   if (days)
