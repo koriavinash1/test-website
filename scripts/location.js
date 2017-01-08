@@ -12,9 +12,16 @@ general_app.controller("map", function($scope,$http) {
 		console.log($scope.area);
 		console.log($scope.city);
 		console.log($scope.country);
-		var location = $scope.area.toString() + ", " + $scope.city.toString() +", "+ $scope.country.toString();
-    setcookie("location", location, 15);
-    console.log(location);
+    if( $scope.area === "" || $scope.city === "" || $scope.country === "" || $scope.area === "undefined" || $scope.city === "undefined" || $scope.country === "undefined" ){
+        alert("Fill all details correctly....");
+        window.location.reload();
+      }
+    else {
+      var location = $scope.area.toString() + ", " + $scope.city.toString() +", "+ $scope.country.toString();
+      setcookie("location", location, 15);
+      console.log(location);
+      window.location("/map.html")
+    }
 	};
 });
 
