@@ -12,7 +12,8 @@ general_app.controller("map", function($scope,$http) {
 		console.log($scope.area);
 		console.log($scope.city);
 		console.log($scope.country);
-    if( $scope.area === "" || $scope.city === "" || $scope.country === "" || to($scope.area) === "undefined" || to($scope.city) === "undefined" || to($scope.country) === "undefined" ){
+    var u = 'undefined';
+    if( $scope.area === "" || $scope.city === "" || $scope.country === "" || to($scope.area) === u || to($scope.city) === u || to($scope.country) === u ){
         alert("Fill all details correctly....");
         window.location("/location.html");
       }
