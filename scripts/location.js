@@ -14,7 +14,7 @@ general_app.controller("map", function($scope,$http) {
 		console.log($scope.country);
 		var location = $scope.area.toString() + ", " + $scope.city.toString() +", "+ $scope.country.toString();
     setcookie("location", location, 15);
-    console.log("hello");
+    console.log(location);
 	};
 });
 
