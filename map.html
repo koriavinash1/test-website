@@ -39,16 +39,15 @@
             return "";
         }
 
-        var geocoder =  new google.maps.Geocoder();
-        geocoder.geocode( { 'address': temp}, function(results, status) {
-           if (status == google.maps.GeocoderStatus.OK) {
-             var lat = results[0].geometry.location.lat();
-             var lng = results[0].geometry.location.lng();
-           } else {
-             alert("something went wrong" + status);
-           }
-
           function initMap() {
+            var geocoder =  new google.maps.Geocoder();
+            geocoder.geocode( { 'address': temp}, function(results, status) {
+               if (status == google.maps.GeocoderStatus.OK) {
+                 var lat = results[0].geometry.location.lat();
+                 var lng = results[0].geometry.location.lng();
+               } else {
+                 alert("something went wrong" + status);
+               }
             map = new google.maps.Map(document.getElementById('map'), {
               zoom: 7,
               center: {lat: lat, lng: lng}  // Center the map on Chicago, USA.
