@@ -15,13 +15,13 @@ general_app.controller("map", function($scope,$http) {
     var u = 'undefined';
     if( $scope.area === "" || $scope.city === "" || $scope.country === "" || to($scope.area) === u || to($scope.city) === u || to($scope.country) === u ){
         alert("Fill all details correctly....");
-        window.location.href("/location.html");
+        window.location.href = "/location.html";
       }
     else {
       var location = $scope.area.toString() + ", " + $scope.city.toString() +", "+ $scope.country.toString();
       setcookie("location", location, 15);
       console.log(location);
-      window.location.href("/map.html")
+      window.location.href = "/map.html";
     }
 	};
 });
