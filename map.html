@@ -5,12 +5,9 @@
     <meta charset="utf-8">
     <title>MasterStroke</title>
     <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
       #map {
         height: 100%;
       }
-      /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
         margin: 0;
@@ -83,7 +80,8 @@
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
-
+        var temp = getCookie("location");
+        console.log(temp);
         var searchBox = new google.maps.places.SearchBox(input);
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
