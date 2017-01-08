@@ -49,7 +49,7 @@
                  var lng = results[0].geometry.location.lng();
                    map = new google.maps.Map(document.getElementById('map'), {
                    zoom: 7,
-                   center: {lat: lat, lng: lng}  // Center the map on Chicago, USA.
+                   center: new google.maps.LatLng(position.coords.latitude, position.coords.longitude);  // Center the map on Chicago, USA.
                  });
                } else {
                  alert("something went wrong " + status);
@@ -84,7 +84,7 @@
       //}
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/place/textsearch/json?query=1054+East+Commerce+Blvd+Slinger+WI+53086&key=AIzaSyCTJTmqyGupTka1CUy6ayDBUd2_txGhxBU&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTJTmqyGupTka1CUy6ayDBUd2_txGhxBU&callback=initMap">
     </script>
   </body>
 </html>
