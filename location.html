@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="scripts/jquery.onepage-scroll.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato" />
-    <script type="text/javascript" src="scripts/map.js"></script>
+    <script type="text/javascript" src="scripts/location.js"></script>
   </head>
   <body ng-app="masterstroke" ng-controller = "map">
     <div class="container-fluid" style="background:#17323e;" ng-style="{'min-height':height + 'px'}" >
@@ -39,17 +37,17 @@
           <div class="panel-heading">Secondary Details</div>
           <div class="panel-body">
             <label for = "school" style="color:white;padding-right:15px;">School near by:
-            <input type="radio" name="school" value="schoollocation" ng-model="school" ng-checked = "true"/>Yes
-            <input type="radio" name="school" value="schoollocation" ng-model="school" />No</label>
+            <input type="radio" name="school" value="schoollocation" ng-model="school" ng-checked = "true" style="cursor:pointer;"/>Yes
+            <input type="radio" name="school" value="schoollocation" ng-model="school" style="cursor:pointer;"/>No</label>
             <br /><br /><label for ="Garden" style="color:white;">Garden near by:
-            <input type="radio" name="garden" value="gardenlocation" ng-model="garden" ng-checked = "true"/>Yes
-            <input type="radio" name = "garden" value = "gardenlocation" ng-model = "garden" />No</label>
+            <input type="radio" name="garden" value="gardenlocation" ng-model="garden" ng-checked = "true" style="cursor:pointer;"/>Yes
+            <input type="radio" name = "garden" value = "gardenlocation" ng-model = "garden" style="cursor:pointer;"/>No</label>
             <br /><br /><label for ="Market" style="color:white;">Market near by:
-            <input type="radio" name="market" value="marketlocation" ng-model="market" ng-checked = "true"/>Yes
-            <input type="radio" name = "market" value = "marketlocation" ng-model = "market"/>No</label>
+            <input type="radio" name="market" value="marketlocation" ng-model="market" ng-checked = "true" style="cursor:pointer;"/>Yes
+            <input type="radio" name = "market" value = "marketlocation" ng-model = "market" style="cursor:pointer;"/>No</label>
           </div>
         </div>
-        <h2><a href="file:///home/koriavinash/koriavinash1.github.io/map.html" style="color:white;text-decoration:none;text-align:center;" ng-click="search()">Search</a></h2>
+        <h2><a  style="color:white;text-decoration:none;text-align:center;" ng-click="search()">Search</a></h2>
       </div>
     </div>
 

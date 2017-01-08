@@ -83,6 +83,7 @@
 
         // Create the search box and link it to the UI element.
         var input = document.getElementById('pac-input');
+        input = getCookie("location");
         var searchBox = new google.maps.places.SearchBox(input);
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
@@ -141,6 +142,21 @@
         });
       }
 
+      function getCookie(cname) {
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(';');
+          for(var i = 0; i <ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') {
+                  c = c.substring(1);
+              }
+              if (c.indexOf(name) == 0) {
+                  return c.substring(name.length, c.length);
+              }
+          }
+          return "";
+      }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTJTmqyGupTka1CUy6ayDBUd2_txGhxBU&libraries=places&callback=initAutocomplete"
          async defer></script>
