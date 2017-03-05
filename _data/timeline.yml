@@ -1,5 +1,5 @@
 - name: "Web Developer"
-  place: "IIT Madras"
+  place: "EduHub"
   website: "http://www.eduhubweb.com"
   icon: 'icon-embed2'
   title: 'Project'
@@ -8,7 +8,7 @@
           Approach in digitalizing educational system. 
           <br />Web development.
           <br />Django, AngularJS, JS, Bootstrap, CSS, HTML.
-          
+
 - name: "2nd year Engineering Design"
   place: "Indian Institute Of Technology Madras"
   website: "http://www.iitm.ac.in/"

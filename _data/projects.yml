@@ -1,32 +1,6 @@
-- name: 'IMDB GraphQL'
-  url: 'https://github.com/lucasschejtman/imdb-graphql-flow'
-  img: 'static/img/landing/graphql.png'
-  desc: >
-          A GraphQL wrapper for some of the unofficial IMDB APIs.
-          <br /><strong>JS, Ramda, FlowType</strong>
-- name: 'Functional React'
-  url: 'https://github.com/lucasschejtman/react-redux-functional'
-  img: 'static/img/landing/react.png'
-  desc: >
-          A functional and modular approach to the well known todo app.
-          <br /><strong>JS, React, Redux, Ramda</strong>
-- name: 'Online Problems'
-  url: 'https://github.com/lucasschejtman/online-problems'
-  img: 'static/img/landing/haskell.png'
-  desc: >
-          My solutions to problems from sites such as; Project Euler, HackerRank and more.
-          <br /><strong>Haskell</strong>
-- name: 'Jalpc'
-  url: 'https://github.com/Jack614/jalpc_jekyll_theme/graphs/contributors'
-  img: 'static/img/landing/jekyll.png'
-  desc: >
-          The Jekyll theme on which this website is built.
-          <br /><strong>JS, Liquid Templates</strong>
-#<a href="https://www.chromeexperiments.com/globe">Chrome Experiment</a>
-- name: 'Meetup Globe'
-  url: 'https://github.com/lucasschejtman/meetup-globe'
-  img: 'static/img/landing/meetup.png'
-  desc: >
-          Chrome Experiment for Meetup's members distribution worldwide.
-          <br /><a href="/e/meetup-globe/">Demo</a>
-          <br /><strong>JS, WebGL</strong>
+# - name: 'IMDB GraphQL'
+#   url: 'https://github.com/lucasschejtman/imdb-graphql-flow'
+#   img: 'static/img/landing/graphql.png'
+#   desc: >
+#           A GraphQL wrapper for some of the unofficial IMDB APIs.
+#           <br /><strong>JS, Ramda, FlowType</strong>
