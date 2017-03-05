@@ -15,9 +15,9 @@
                           <i class="{{ event.icon }}"></i>
                       </div>
                       <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpLeft {% else %} rotateInUpRight {% endif %}">
-                          <h2><span>{{ event.name }} @ <a href="{{ event.website }}" target="_blank">{{ event.place }}</a></span></h2>
+                          <h2><span>{{ event.name }}</span></h2>
                           <p><span>{{ event.desc }}</span></p>
-                          <p><span><a href="{{ site.author.linkedin }}" target="_blank">See More</a></span></p>
+                          <p><span><a href="{{event.website}}">See more</a></span></p>
                           <span class="vertical-date"><span> {{ event.date }} </span>
                           <br/> <small><span>{{ event.title }}</span></small> </span>
                       </div>

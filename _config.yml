@@ -14,9 +14,6 @@ author:
   head_img: 'static/img/landing/avinash.jpg'
   tag: 'Programming, Software, Web-Development'
   desc: >
-            Applied math enthusiast, especially cryptography, with over 10 years experience in the software industry.
-            <br />As a full stack developer, I'm always up for a challenge at any front.
-            <br />I enjoy keeping myself up to date and playing with the latest and greatest.
 
 stylesheets:
   - url: "lib/css/bootstrap.min.css"
