@@ -1,4 +1,7 @@
 /* PACE */
+*{
+font-family: 'Karla', sans-serif; 
+}
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
