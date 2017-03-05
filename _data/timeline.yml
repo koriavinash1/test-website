@@ -1,0 +1,19 @@
+- name: "Web Developer"
+  place: "IIT Madras"
+  website: "http://www.eduhubweb.com"
+  icon: 'icon-embed2'
+  title: 'Project'
+  date: 'Apr 2006 – Mar 2009'
+  desc: >
+          Approach in digitalizing educational system. 
+          <br />Web development.
+          <br />Django, AngularJS, JS, Bootstrap, CSS, HTML.
+          
+- name: "2nd year Engineering Design"
+  place: "Indian Institute Of Technology Madras"
+  website: "http://www.iitm.ac.in/"
+  icon: 'icon-book'
+  title: 'Education'
+  date: 'July 2015 - Aug 2020(expected)'
+  desc: >
+          Now I am a student at IIT Madras, Chennai, India. I am majoring in Engineering Design.
