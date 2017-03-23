@@ -10,6 +10,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script type="text/javascript" async
+          src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+        </script>
     </head> 
     <body>
         <div class="container-fluid" >
@@ -28,7 +34,20 @@
                             <strong>2> </strong>Noiseless, eco-friendly power generator.  <br>
                             <strong>3> </strong>A generator for charging Laptops,tablets,smartphones and other electrical devices which can be used as a backup source,when electric power supply is down.<br>
                             </p>
-
+                            <button class="btn btn-default btn-lg" data-target="#currentsolutions" data-toggle="modal"><a href="#" style="text-decoration:none;">Existing solutions</a></button>
+                        </div>
+                        <div class="modal fade" id="currentsolutions">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h3 class="modal-title">Existing Solutions</h3>
+                                    </div>
+                                    <div class="modal-body">
+                                       
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,14 +64,84 @@
                     <strong>2> </strong>Planning to use dual cylinder beta-type stirling engine with inner fluid as fluorinated alkanes, ethers(due to their high molecular mass or lower boiling point property).<br>
                     <strong>3> </strong>To reduce noise and for pollution control we are planning to use propyl-alcohol as fuel. <br>
                     </p>
+                    <button class="btn btn-default btn-lg" data-target="#advantages" data-toggle="modal"><a href="#" style="text-decoration:none;">Advantages of our solution</a></button>
+                </div>
+                <div class="modal fade" id="advantages">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="modal-title">Advantages of our solution</h3>
+                            </div>
+                            <div class="modal-body">
+                               
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="padding-top:50px;">
+        <div class="container-fluid" style="padding-top:50px;margin:25px;">
             <h2 style="text-align:center;">Calculations</h2>
             <hr>
+            <div class="container-fluid" style="margin-top:15px">
+                <div class="col-sm-4" style="text-align:center;" style="margin:10px;">
+                    <img src="http://imge-grup.com/wp-content/uploads/2016/01/imge-management1-1.jpg" style="height:200;width:90%">
+                    <label>Fig. 1</label>
+                </div>
+                <div class="col-sm-4" style="text-align:center;" style="margin:10px;">
+                    <img src="http://imge-grup.com/wp-content/uploads/2016/01/imge-management1-1.jpg" style="height:200;width:90%">
+                    <label>Fig. 2</label>
+                </div>
+                <div class="col-sm-4" style="text-align:center;" style="margin:10px;">
+                    <img src="http://imge-grup.com/wp-content/uploads/2016/01/imge-management1-1.jpg" style="height:200;width:90%">
+                    <label>Fig. 3</label>
+                </div>
+            </div>
+            <p>From Fig.1 equation for displacer $$ {d_{1}} = {r_{1}}(1-cos\phi) + {0.5{{r_{1}^{2}(sin\phi)^{2}}}\over{{l_{1}}}},  {V_{exp}} = {d_{1}}A   ...( A: Area) $$</p>
+
+            <p>From Fig.1 equation for power piston $$ {d_{2}} = {r_{2}}(1-cos(\phi-\theta)) + {0.5{{r_{2}^{2}(sin(\phi-\theta))^{2}}}\over{{l_{2}}}},  {V_{con}} = {d_{2}}A   ...( A: Area) $$ </p>
+
+            <div class="alert alert-info alert-sm" style="text-align:center;"><p>From first law of thermodynamics total heat given to the system is equal to the sum heat given by the system and work done by the system. </p></div>
+
+            <p>From Fig.2 $$ {Q_{in}} = {Q_{cond}} + {Q_{conv}} + {W_{out}} $$</p>
+
+            <p>$$ \Rightarrow {Q_{in}} = {{kA\Delta \Theta}\over{\Delta t}} + {h2\pi{r}\int_{0}^{d_{1}}dx({T_{x} - T_{{\infty}1}})} + {W_{out}} $$</p>
+
+            <h4>since Isothermal assumption$$ {T_{x}} = {T_{1}}$$</h4>
+
+            <p>$$ \Rightarrow {Q_{in}} = {{kA({T_{heat}} - {T_{1}}})\over{\Delta t}} + {h2\pi{r}\int_{0}^{d_{1}}dx({T_{1} - T_{{\infty}1}})} + {W_{out}} $$</p><br>
+
+            <p>$$ \Rightarrow {T_{1}} = {{Q_{in}} - {kAT_{heat}\over {\Delta t}} + 2\pi{rd_{1}hT_{{\infty}1}} \over {{2\pi{rhd_{1}} + {nRAd_{1} \over V_{exp}} - {kA \over \Delta t}}}} $$</p><hr>
+
+            <p>$$ {W_{in}} = {Q_{conv}} $$</p>
+
+            <p>$$ \Rightarrow {W_{in}} = {h2\pi{r} (T_{2} - T_{{\infty}2})\int_{0}^{d_{2}}dx} $$</p><br>
+
+            <p>$$ \Rightarrow {T_{2}} = {{2\pi{rhd_{2}T_{{\infty}2}}} \over {2\pi{rhd_{2} - {nRAd_{2} \over {V_{com} - A_{shaft}}}}}} $$</p><hr>
+
+            <p>$$ P_{max} = \tau \omega $$</p>
+
+            <p>$$ \tau = F_{1}cos{\theta_{1}}r_{1} - F_{2}cos{\theta_{2}}r_{2} $$</p>
+
+            <p>$$ \Rightarrow \tau = p_{1}Acos{\theta_{1}}r_{1} - p_{2}(A-A_{shaft})cos{\theta_{2}}r_{2} $$</p>
+
+            <p>$$ \Rightarrow P_{max} = (p_{1}Acos{\theta_{1}}r_{1} - p_{2}(A-A_{shaft})cos{\theta_{2}}r_{2})\omega $$</p>
+
+            <p>$$ \Rightarrow P_{max} = {nR\omega \over \sqrt{2}}({{r_{1}{Q_{in} \Delta t - kAT_{heat} + 2\pi{rd_{1}hT_{{\infty}1}}\Delta t }\over {2\pi{rd_{1}h\Delta t} + nR\Delta t - kA}} - {{2\pi{rr_{2}hT_{{\infty}2}}} \over {2\pi{rd_{2}h} - nR}}}) $$</p><hr>
+
+            <div class="alert alert-info alert-sm" style="text-align:center;"><p>Geometric analysis: assuming some std. geometric relations for optimum output we get,</p></div>
+            <p>From Fig.3</p>
+            <p>$$ l_{d} D_{D}^{2} = 1.5l_{p}D_{p}^{2}  $$</p>
+            <p>$$ \Rightarrow l_{p} = D_{p} ..and.. D_{d} = 0.9{D_{p}} $$</p>
+            <p>$$ \Rightarrow l_{p} = 0.36l_{c} ..and.. l_{d} = 0.67l_{c} $$</p>
+            <div class="alert  alert-info" style="text-align:center;">let the distance from center of disk to cylinder be as same as length of cylinder.</div>
+            <p>$$ l_{pistonShaft} = l_{c} - l_{p} ...and... l_{displacerShaft} = l_{c} - l_{d} $$</p>
+            <p>$$ l_{1} = 0.835l_{c} ... and ... r_{1}=0.165l_{c} $$</p>
+            <p>$$ l_{2} = 0.68l_{c} ... and ... r_{1}=0.32l_{c} $$</p>
+
         </div>
-        <div class="container-fluid" style="padding-top: 50px;">
+        <div class="container-fluid" style="padding-top: 50px;margin:25px;">
             <h2 style="text-align:center;">Matlab Code</h2>
             <hr>
             <div class="jumbotron" style="font-size: 18px; ">
@@ -108,13 +197,26 @@
                     title('Graph of lcylinder and power for lcylinder Between 0 and 1 in m.')<br>
                     xlabel('lcylinder') % x-axis label<br>
                     ylabel('power') % y-axis label<br>
-                </code>
+                </code><br><br>
+                <button class="btn btn-default btn-lg"><a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTVGhrZWNTUVVHU2M" style="text-decoration:none;" download>Get Matlab Code</a></button>
                 <div class="container-fluid">
-                    
+                    <h2>Plots</h2><hr>
+                    <div class="container-fluid">
+                        <div class="col-sm-6">
+                            <a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTSmFCS25aRmxpczA"><img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTSmFCS25aRmxpczA" style="height:250px;width:90%;"/></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTbXR2aEFyTk9HUVE"><img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTbXR2aEFyTk9HUVE" style="height:250px;width:90%;" /></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </body>
-    <footer>
+    <footer >
+        <div class="container-fluid" style="background-color:#17232e;padding:10px;" >
+        <p style="text-align:center;color:white;">&copy;2017 Group3, ED4040. All Rights Reserved.</p>
+        </div>
     </footer>
 </html>
+
