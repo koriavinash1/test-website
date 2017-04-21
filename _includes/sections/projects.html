@@ -10,7 +10,7 @@
         {% assign loopindex = forloop.index | modulo: 2 %}
         <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
             <div class="team-member">
-                <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-thumbnail img-md" alt="">
                 <h4><a href="{{ project.url }}" target="blank" style="color: #1ab394" class="navy">{{ project.name }}</a></h4>
                 <p><span>{{ project.desc }}</span></p>
             </div>
