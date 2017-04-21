@@ -5,25 +5,4 @@
           A GraphQL wrapper for some of the unofficial IMDB APIs.
           <br /><strong>JS, Ramda, FlowType</strong>
 
-- name: 'Universal Gripper Drone'
-  url: 'https://www.youtube.com/watch?v=XXb6z8SEO-A&feature=youtu.be'
-  img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4QZsOkW55Lw6HxPkrOpinmCLAbDvVttEeck-gj5KfAxoP7Dt2'
-  desc: >
-          We aim to make the process of moving around irregularly shaped small packages in warehouses easier, faster and more efficient. Using all the principles of FCD. can find more details <a href="https://drive.google.com/open?id=1efHyIRHlqC6z7Htj7P1BrRK_2whR49OCJA19GH19C3g">here</a>
-          <br /><strong>As a part of Mechanical course.</strong>
 
-
-- name: '2 DOF Robotic manipulator'
-  url: 'https://www.youtube.com/watch?v=XXb6z8SEO-A&feature=youtu.be'
-  img: 'http://curriculum.vexrobotics.com/sites/default/files/MANIP.png'
-  desc: >
-	  Made 2 degree manipulator which picks and drops the object based on colour. Used for seperating the objects of different colour. 
-          <br /><strong>As a part of Mechatronics course.</strong>
-
-
-- name: 'Beta Type Stirling Engine'
-  url: 'http://edstirlingengine.000webhostapp.com/'
-  img: 'http://www.epicphysics.com/wp-content/uploads/2015/03/beta-stirling-engine.gif'
-  desc: >
-          Made the working prototype of beta-type stirling engine.
-          <br /><strong>As a part of fluids and thermodynamic course.</strong>
