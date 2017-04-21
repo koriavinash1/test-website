@@ -18,3 +18,10 @@
   desc: >
           Made a prototype of beta-type stirling engine.
           <br /><strong>As a part of fluids and thermodynamic course.</strong>
+
+- name: 'Pulse-oxy meter'
+  url: 'https://github.com/koriavinash1/pulseOxyMeter'
+  img: 'static/img/projects/pulse.jpg'
+  desc: >
+          Made a pulse-oxy meter to find count of heartbeat and oxygen level.
+          <br /><strong>As a part of Design Electronic Systems course.</strong>
