@@ -1,412 +1,58 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>ED4060</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="One stop for all educational resources">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0, user-scalable=no"/>
-        <meta name="author" content="Eduhub">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-        </script>
-        <script type="text/javascript" async
-          src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
-        </script>
-    </head> 
-    <body>
-        <div class="container-fluid" >
-            <h2 style="text-align:center;"> ED4040 Course Project</h2>
-            <hr>
-            <div class="container-fluid">
-                <div class="col-sm-6">
-                    <div class="container-fluid" style="text-align: left;">
-                        <div class="jumbotron">
-                            <!-- Add intro....-->
-                            <h2>Customer Needs</h2>
-                            <hr>
-                            <h3>What does our customer want?</h3>
-                            <p>
-                            <strong>1> </strong>A small-sized power generator capable of powering everyday appliances.<br>
-                            <strong>2> </strong>Noiseless, eco-friendly power generator.  <br>
-                            <strong>3> </strong>A generator (which can be used as a backup source)for charging Laptops, tablets, smartphones and other electrical devices when electric power supply is down.<br>
-                            </p>
-                            <button class="btn btn-default btn-lg" data-target="#currentsolutions" data-toggle="modal"><a href="#" style="text-decoration:none;">Existing solutions</a></button>
-                        </div>
-                        <div class="modal fade" id="currentsolutions">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h3 class="modal-title">Existing Solutions</h3>
-                                    </div>
-                                    <div class="modal-body">
-                                    <p>
-                                        <strong>1> </strong>Solar powered generators can only harness energy during daytime.<br>
-                                        <strong>2> </strong>Also the solar generators have very low efficiency.<br>
-                                        <strong>3> </strong>The photovoltaic cells used in these generators have an efficiency of around 15-20%.<br>
-                                        <strong>4> </strong>Diesel engine generators are bulky, create a lot of noise and unwanted residue.<br>
-                                        <strong>5> </strong>Harnesses energy through internal combustion.<br>
-                                        <strong>6> </strong>Efficiency around 45%.<br>
-                                    </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6" style="text-align:center;">
-                    <img src="http://www.epicphysics.com/wp-content/uploads/2015/03/beta-stirling-engine.gif" style="margin-top:50px;width:100%;">
-                </div>
+---
+layout: default
+title: index
+permalink: /
+---
+
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-scroll" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <button class="button btn-primary btn-lg" style="margin-top:2px;"><a href="#inSlider" style="color:white">Home</a></button>
             </div>
-            <div class="container-fluid">
-                <div class="jumbotron" style="margin:25px;">
-                    <h2>Technical Details Of Our Solution:</h2>
-                    <hr>
-                    <p>
-                    <strong>1> </strong>Aiming to build the generator which provides the power of 500 Watt, useful for charging laptops, tablets, smartphones and other domestic electrical devices and simultaneously running a fan and 2 tube-lights.<br>
-                    <strong>2> </strong>Planning to use dual cylinder beta-type stirling engine with inner fluid as fluorinated alkanes, ethers(due to their high molecular mass or lower boiling point property).<br>
-                    <strong>3> </strong>To reduce noise and for pollution control we are planning to use propyl-alcohol as fuel. <br>
-                    </p>
-                    <button class="btn btn-default btn-lg" data-target="#advantages" data-toggle="modal"><a href="#" style="text-decoration:none;">Advantages of our solution</a></button>
-                </div>
-                <div class="modal fade" id="advantages">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h3 class="modal-title">Advantages of our solution</h3>
-                            </div>
-                            <div class="modal-body">
-                               <p>
-                                    <strong>1> </strong>The major advantage of this solution is that we can start generating energy(here,rotating the flywheel) earlier than a stirling engine which uses only air.<br>
-                                    <strong>2> </strong>Since the flywheel can rotate faster (since we're using a gas of greater diffusivity), we can generate more energy from a relatively smaller engine.<br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right" id="i18_navbar">
+                  {% for section in site.sections %}
+                    <li><a class="page-scroll" href="#{{ section.id }}"><span>{{ section.name }}</span></a></li>
+                  {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div id="inSlider" class="carousel carousel-fade" data-ride="carousel" style="padding:0;margin:0;">
+    <ol class="carousel-indicators">
+        <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#inSlider" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox" >
+        <div class="item active">
+            <div class="container-fluid" style="padding:0;margin:0;">
+                <div class="carousel-image wow">
+                    <img src="static/img/slider/iitmgc.jpg" alt="laptop" style="width:100vw;height:80vh;" />
                 </div>
             </div>
         </div>
-        <div class="container-fluid" style="padding-top:50px;margin:25px;">
-            <h2 style="text-align:center;">Calculations</h2>
-            <hr>
-            <div class="container-fluid" style="margin-top:15px">
-                <div class="col-sm-4" style="text-align:center;" style="margin:10px;height:250px;">
-                    <a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTRE8ybS02MmYxNkU" target="_blank"><img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTRE8ybS02MmYxNkU" style="height:200px;width:95%;"></a>
-                    <label>Fig. 1</label>
-                </div>
-                <div class="col-sm-4" style="text-align:center;height:250px;">
-                    <a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTUjhJUWNIMUJIMlE" target="_blank"><img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTUjhJUWNIMUJIMlE" style="height:200px;width:95%;"></a>
-                    <label>Fig. 2</label>
-                </div>
-                <div class="col-sm-4" style="text-align:center;height:250px;" >
-                    <a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTSmhzdlBPejlsNjA" target="_blank"><img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTSmhzdlBPejlsNjA" style="height:200px;width:95%;"></a>
-                    <label>Fig. 3</label>
-                </div>
-            </div>
-            <p>From Fig.1 equation for displacer $$ {d_{1}} = {r_{1}}(1-cos\phi) + {0.5{{r_{1}^{2}(sin\phi)^{2}}}\over{{l_{1}}}},  {V_{exp}} = {d_{1}}A   ...( A: Area) $$</p>
-
-            <p>From Fig.1 equation for power piston $$ {d_{2}} = {r_{2}}(1-cos(\phi-\theta)) + {0.5{{r_{2}^{2}(sin(\phi-\theta))^{2}}}\over{{l_{2}}}},  {V_{con}} = {d_{2}}A   ...( A: Area) $$ </p>
-
-            <div class="alert alert-info alert-sm" style="text-align:center;"><p>From first law of thermodynamics total heat given to the system is equal to the sum heat given by the system and work done by the system. </p></div>
-
-            <p>From Fig.2 $$ {Q_{in}} = {Q_{cond}} + {Q_{conv}} + {W_{out}} $$</p>
-
-            <p>$$ \Rightarrow {Q_{in}} = {{kA\Delta \Theta}\over{\Delta t}} + {h2\pi{r}\int_{0}^{d_{1}}dx({T_{x} - T_{{\infty}1}})} + {W_{out}} $$</p>
-
-            <h4>since Isothermal assumption$$ {T_{x}} = {T_{1}}$$</h4>
-
-            <p>$$ \Rightarrow {Q_{in}} = {{kA({T_{heat}} - {T_{1}}})\over{\Delta t}} + {h2\pi{r}\int_{0}^{d_{1}}dx({T_{1} - T_{{\infty}1}})} + {W_{out}} $$</p><br>
-
-            <p>$$ \Rightarrow {T_{1}} = {{Q_{in}} - {kAT_{heat}\over {\Delta t}} + 2\pi{rd_{1}hT_{{\infty}1}} \over {{2\pi{rhd_{1}} + {nRAd_{1} \over V_{exp}} - {kA \over \Delta t}}}} $$</p><hr>
-
-            <p>$$ {W_{in}} = {Q_{conv}} $$</p>
-
-            <p>$$ \Rightarrow {W_{in}} = {h2\pi{r} (T_{2} - T_{{\infty}2})\int_{0}^{d_{2}}dx} $$</p><br>
-
-            <p>$$ \Rightarrow {T_{2}} = {{2\pi{rhd_{2}T_{{\infty}2}}} \over {2\pi{rhd_{2} - {nRAd_{2} \over {V_{com} - A_{shaft}}}}}} $$</p><hr>
-
-            <p>$$ P_{max} = \tau \omega $$</p>
-
-            <p>$$ \tau = F_{1}cos{\theta_{1}}r_{1} - F_{2}cos{\theta_{2}}r_{2} $$</p>
-
-            <p>$$ \Rightarrow \tau = p_{1}Acos{\theta_{1}}r_{1} - p_{2}(A-A_{shaft})cos{\theta_{2}}r_{2} $$</p>
-
-            <p>$$ \Rightarrow P_{max} = (p_{1}Acos{\theta_{1}}r_{1} - p_{2}(A-A_{shaft})cos{\theta_{2}}r_{2})\omega $$</p>
-
-            <p>$$ \Rightarrow P_{max} = {nR\omega \over \sqrt{2}}({{r_{1}{Q_{in} \Delta t - kAT_{heat} + 2\pi{rd_{1}hT_{{\infty}1}}\Delta t }\over {2\pi{rd_{1}h\Delta t} + nR\Delta t - kA}} - {{2\pi{rr_{2}hT_{{\infty}2}}} \over {2\pi{rd_{2}h} - nR}}}) $$</p><hr>
-
-            <div class="alert alert-info alert-sm" style="text-align:center;"><p>Geometric analysis: assuming some std. geometric relations for optimum output we get,</p></div>
-            <p>From Fig.3</p>
-            <p>$$ l_{d} D_{D}^{2} = 1.5l_{p}D_{p}^{2}  $$</p>
-            <p>$$ \Rightarrow l_{p} = D_{p} ..and.. D_{d} = 0.9{D_{p}} $$</p>
-            <p>$$ \Rightarrow l_{p} = 0.36l_{c} ..and.. l_{d} = 0.67l_{c} $$</p>
-            <div class="alert  alert-info" style="text-align:center;">let the distance from center of disk to cylinder be as same as length of cylinder.</div>
-            <p>$$ l_{pistonShaft} = l_{c} - l_{p} ...and... l_{displacerShaft} = l_{c} - l_{d} $$</p>
-            <p>$$ l_{1} = 0.835l_{c} ... and ... r_{1}=0.165l_{c} $$</p>
-            <p>$$ l_{2} = 0.68l_{c} ... and ... r_{1}=0.32l_{c} $$</p><hr>
-
-            <div class="alert  alert-info" style="text-align:center;"><strong>CFD analysis:</strong></div>
-            <div class="container-fluid">
-                <iframe width="100%" height="520" src="https://www.youtube.com/embed/ltdwQPSt820?ecver=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <hr>
-            <div class="alert  alert-info" style="text-align:center;"><strong>Shaft Design with stress analysis images</strong></div>
-            <div class="container-fluid">
-                <img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTWVJqc1A4VVQ1OGc" style="height:580px;width:100%;"><br>
-                <button type="button" class="btn btn-lg btn-default"><a href="http://a360.co/2oWh12c" style="text-decoration:none;">View model</a></button>
-            </div>
-            <hr>
-            <div class="alert  alert-info" style="text-align:center;"><strong>Gallery</strong></div>
-            <div class="container-fluid" style="text-align:inline-block;">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                  <!-- Indicators -->
-                  <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                  </ol>
-
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTVF83SEFoWEd5RW8" alt="Chania" style="height:550px;width:100%;">
-                    </div>
-
-                    <div class="item">
-                      <img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTM2c5c1Y3cTM4VlE" alt="Chania" style="height:550px;width:100%;">
-                    </div>
-
-                    <div class="item">
-                      <img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTRzBBWHNEWnJJb2c" alt="Flower" style="height:550px;width:100%;">
-                    </div>
-
-                    <div class="item">
-                      <img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTRU9VN3o0OS03MUE" alt="Flower" style="height:550px;width:100%;">
-                    </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-        <div class="container-fluid" style="padding-top: 50px;margin:25px;">
-            <h2 style="text-align:center;">Matlab Code</h2>
-            <hr>
-            <div class="jumbotron" style="font-size: 18px; ">
-                <code>
-                    %% Geometric paramenters....<br>
-                    %lengths in m<br>
-                    l_cylinder = [11.79556: 0.00001: 11.79557];<br>
-                    thickness = .005;<br>
-                    Area = 0.101 .* l_cylinder .* l_cylinder; <br>
-                    r = sqrt(Area / pi);<br><br>
-
-                    shaft_area = 0.5;<br><br>
-
-                    %% crank lenghs<br>
-                    r_disp = 0.165 .* l_cylinder;<br>
-                    r_piston = 0.32 .* l_cylinder;<br><br>
-
-                    l_disp = 0.835 .* l_cylinder;<br>
-                    l_piston = 0.68 .* l_cylinder;<br><br>
-
-                    theta = 90; %phase difference<br>
-                    phi = 45;<br><br>
-
-                    % max. volume<br>
-                    %Vmax = displacer(r_disp, l_disp, 0) * Area + displacer(r_disp, l_disp, - theta * pi/180) * Area;<br><br>
-
-                    %% kinematic parameters....<br>
-                    %displacement of piston rod<br>
-                    d_disp = r_disp .* (1 - cos(phi .* pi/180)) + 0.5 .* (r_disp/l_disp) .* r_disp .* (sin(phi .* pi/180) .* sin(phi .* pi/180));<br>
-                    d_piston = r_piston .* (1 - cos((phi - theta) .* (pi/180))) + 0.5 .* (r_piston/l_piston) .* r_piston .* (sin((phi - theta) .* (pi/180)) .* sin((phi - theta) .* (pi/180)));<br><br>
-
-                    w = 800; % angular velocity<br>
-
-                    %% Thermodynamic parameters..............<br>
-                    n = 100;  % number of moles...<br>
-                    R = 8.237; % gas constant<br>
-                    h = 40; % convection coefficient<br>
-                    k = 140; % thermal conductivity of cylinder<br>
-                    Qin = 420;<br>
-                    Theat = 900; % experession in terms of Qin<br>
-                    Troom = 300; % kelvin<br>
-                    Tconden = 250; % kelvin<br><br>
-
-                    %%calculations<br><br>
-
-                    pow = n .* R .* w .* ((r_disp .* cos(45 .* pi./180) ./ d_disp).*((Qin*thickness - k*Area*Theat +                2.*pi.*r.*d_disp.*h.*Troom.*thickness)./(2.*pi.*r.*d_disp.*h.*thickness + n.*R.*thickness - k.*Area)) - ((r_piston .* cos(45 .* pi ./ 180)).* ((2.*pi.*r.*h.*Tconden)./(h.*2.*pi.*r.*d_piston - n.*R) )));<br>
-                    % print value<br><br>
-
-                    %% plots<br>
-                    plot(l_cylinder, 100, '*',l_cylinder, pow)<br>
-                    % hold on<br>
-                    % plot(l_cylinder, 100, '.')<br>
-                    title('Graph of lcylinder and power for lcylinder Between 0 and 1 in m.')<br>
-                    xlabel('lcylinder') % x-axis label<br>
-                    ylabel('power') % y-axis label<br>
-                </code><br><br>
-                <button class="btn btn-default btn-lg"><a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTVGhrZWNTUVVHU2M" style="text-decoration:none;" download>Get Matlab Code</a></button>
-                <div class="container-fluid">
-                    <h2>Plots</h2><hr>
-                    <div class="container-fluid">
-                        <div class="col-sm-6">
-                            <a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTSmFCS25aRmxpczA"><img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTSmFCS25aRmxpczA" style="height:250px;width:90%;"/></a>
-                        </div>
-                        <div class="col-sm-6">
-                            <a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTbXR2aEFyTk9HUVE"><img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTbXR2aEFyTk9HUVE" style="height:250px;width:90%;" /></a>
-                        </div>
-                    </div><br><br>
-
-                    <button type="button" class="btn btn-lg btn-default" data-target="#billofmaterial" data-toggle="modal">Bill of materials</button>
-                    <button type="button" class="btn btn-lg btn-default" data-target="#contact" data-toggle="modal" style="float:right;">Contact us</button>
-
-                    <div class="modal fade" id="contact">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h3 class="modal-title">Contact us:</h3>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="container-fluid">
-                                        <div class="col-sm-3"> 
-                                            <a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTYnY5TFowWnQtWFk"><img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTYnY5TFowWnQtWFk" class="img-circle" style="height:150px;width:150px;"/></a>
-                                            <div style="font-size:20px;display:inline-block;" style="text-align:center;">
-                                                <p style="font-size:15px;text-align:center;">Akhil Poojary <br>(ED15B003)</p>
-                                                <ul class="list-inline">
-                                                    <li><a href="mailto:ed15b003@smail.iitm.ac.in" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                                                    <li><a href="https://www.linkedin.com/in/akhil-poojary-28026811b/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTaFNSVmJFenYwRTQ"><img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTaFNSVmJFenYwRTQ" class="img-circle" style="height:150px;width:150px;"/></a>
-                                            <div style="font-size:20px;display:inline-block;" style="text-align:center;">
-                                                <p style="font-size:15px;text-align:center;">Ashutosh Kumar<br>(ED15B005)</p>
-                                                <ul class="list-inline">
-                                                    <li><a href="mailto:ed15b005@smail.iitm.ac.in" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                                                    <li><a href="https://www.linkedin.com/in/ashutosh-kumar-896679119/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTaTRCWjd3RDk2Y1E"><img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTaTRCWjd3RDk2Y1E" class="img-circle" style="height:150px;width:150px;"/></a>
-                                            <div style="font-size:20px;display:inline-block;" style="text-align:center;">
-                                                <p style="font-size:15px;text-align:center;">Avinash G. Kori<br> (ED15B006)</p>
-                                                <ul class="list-inline">
-                                                    <li><a href="mailto:ed15b006@smail.iitm.ac.in" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                                                    <li><a href="https://www.linkedin.com/in/koriavinash1" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <a href="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTa0VSX3BZeVVCd0U"><img src="https://drive.google.com/uc?export=view&id=0B6INYS1fvgdTa0VSX3BZeVVCd0U" class="img-circle" style="height:150px;width:150px;"/></a>
-                                            <div style="font-size:20px;display:inline-block;" style="text-align:center;">
-                                                <p style="font-size:15px;text-align:center;">Parth Deshpande <br>(ED15B011)</p>
-                                                <ul class="list-inline">
-                                                    <li><a href="mailto:ed15b011@smail.iitm.ac.in" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                                                    <li><a href="https://www.linkedin.com/in/parth-deshpande-03ba24105/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal fade" id="billofmaterial">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <h3 class="modal-title">Bill of material</h3>
-                                </div>
-                                <div class="modal-body">
-                                    <ul class="nav nav-tabs">
-                                        <li class="active"><a data-toggle="tab" href="#oProduct">Final Product</a></li>
-                                        <li><a data-toggle="tab" href="#pProduct">Prototype</a></li>
-                                    </ul><br>
-
-                                    <div class="tab-content">
-                                        <div id="oProduct" class="tab-pane fade in active" class="container-fluid" >
-                                            <div class="panel panel-info">
-                                                <div class="panel-heading">Bill of final product</div>
-                                                <div class="panel-body">
-                                                    <table class="table table-hover table-responsive">
-                                                        <thead>
-                                                            <tr><th>Component</th><th>OTY</th><th>Material</th><th>Price</th></tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Displacer Cover</td><td>1</td><td>Printed ABS(M.P. 230°C)</td><td>1000</td>
-                                                            </tr><tr>
-                                                                <td>Piston Insert</td><td>1</td><td>Printed ABS</td><td>1500</td>
-                                                            </tr><tr>
-                                                                <td>Piston</td><td>1</td><td>Aluminium</td><td>1200</td>
-                                                            </tr><tr>    
-                                                                <td>Piston/Displacer conrod</td><td>2</td><td>Steel</td><td>2000</td>
-                                                            </tr><tr>
-                                                                <td>Displacer foam</td><td>1</td><td>Polyurethane/Polyethylene</td><td>800</td>
-                                                            </tr><tr>
-                                                                <td>Crank with Shaft</td><td>1</td><td>Cast Iron</td><td>3000</td>
-                                                            </tr><tr>
-                                                                <td>O-rings</td><td>2</td><td>Polyurethane/Neoprene</td><td>300*2</td>
-                                                            </tr><tr>
-                                                                <td>Flywheel</td><td>1</td><td>6061 Aluminum</td><td>2500</td>
-                                                            </tr><tr>
-                                                                <td>Dynamo</td><td>1</td><td>-</td><td>2500</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                        <div id="pProduct" class="tab-pane" class="container-fluid">
-                                            <div class="panel panel-info">
-                                                <div class="panel-heading">Bill of prototype</div>
-                                                <div class="panel-body">
-                                                    <table class="table table-hover table-responsive">
-                                                        <thead>
-                                                            <tr><th>Component</th><th>OTY</th><th>Material</th><th>Price</th></tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>Test Tube</td><td>1</td><td>Borosilicate</td><td>50</td>
-                                                            </tr><tr>
-                                                                <td>Piston</td><td>1</td><td>syringe</td><td>30</td>
-                                                            </tr><tr>    
-                                                                <td>Displacer foam</td><td>1</td><td>Pink Foam</td><td>50</td>
-                                                            </tr><tr>
-                                                                <td>Flywheel</td><td>1</td><td>Wheel</td><td>100</td>
-                                                            </tr><tr>
-                                                                <td>Dynamo</td><td>1</td><td>-</td><td>200</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="item">
+            <div class="container-fluid" style="padding:0;margin:0;">
+                <div class="carousel-image wow">
+                    <img src="static/img/slider/waterfalls.jpg" alt="laptop" style="width:100vw;height:80vh;" />
                 </div>
             </div>
         </div>
-    </body>
-    <footer >
-        <div class="container-fluid" style="background-color:#17232e;padding:10px;" >
-        <p style="text-align:center;color:white;">&copy;2017 Group3, ED4040. All Rights Reserved.</p>
-        </div>
-    </footer>
-</html>
+    </div>
+</div>
+
+
+{% for section in site.sections %}
+  {% assign loopindex = forloop.index | modulo: 2 %}
+  <section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %}">
+    {% include sections/{{section.tpl}} %}
+  </section>
+{% endfor %}

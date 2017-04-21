@@ -1,0 +1,13 @@
+# - name: 'IMDB GraphQL'
+#   url: 'https://github.com/lucasschejtman/imdb-graphql-flow'
+#   img: 'static/img/landing/graphql.png'
+#   desc: >
+#           A GraphQL wrapper for some of the unofficial IMDB APIs.
+#           <br /><strong>JS, Ramda, FlowType</strong>
+
+- name: 'Beta Type Stirling Engine'
+   url: 'http://edstirlingengine.000webhostapp.com/'
+   img: 'http://www.epicphysics.com/wp-content/uploads/2015/03/beta-stirling-engine.gif'
+   desc: >
+           Made the working prototype of beta-type stirling engine.
+           <br /><strong>As a part of fluids and thermodynamic course.</strong>

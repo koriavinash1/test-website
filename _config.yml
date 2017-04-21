@@ -1,0 +1,45 @@
+# Website settings
+title: "Avinash G. Kori"
+description: "Avinash's personal website."
+keywords: "Avinash,koriavinash1,personal,portfolio"
+baseurl: "/"
+url: "http://koriavinash1.github.io"
+favicon: "static/img/favicon.ico?v=2"
+
+author:
+  name: 'Avinash G. Kori'
+  email: 'koriavinash1@gmail.com'
+  github: 'https://github.com/koriavinash1'
+  linkedin: 'https://www.linkedin.com/in/koriavinash1/'
+  head_img: 'static/img/landing/avinash.jpg'
+  tag: 'Programming, Software, Web-Development'
+  desc: >
+
+stylesheets:
+  - url: "lib/css/bootstrap.min.css"
+  - url: "lib/css/animate.min.css"
+  - url: "static/css/style.min.css"
+
+scripts:
+  - url: "lib/js/jquery.min.js"
+  - url: "lib/js/wow.min.js"
+  - url: "lib/js/pace.min.js"
+  - url: "lib/js/bootstrap.min.js"
+
+sections:
+  - id: "about"
+    name: "About"
+    tpl: "about.html"
+  - id: "career"
+    name: "Career"
+    tpl: "timeline.html"
+  - id: "projects"
+    name: "Projects"
+    tpl: "projects.html"
+
+# google analytics
+# ga:
+#   id: UA-84338948-1
+
+# # Build settings
+# encoding: "utf-8"

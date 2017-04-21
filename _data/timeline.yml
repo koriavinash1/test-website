@@ -1,0 +1,18 @@
+- name: "EduHub"
+  place: "EduHub"
+  website: "http://www.eduhubweb.com"
+  icon: 'icon-embed2'
+  title: 'Web Developer'
+  date: 'Present'
+  desc: >
+          Approach in digitalizing educational system. 
+          <br />Django, AngularJS, JS, Bootstrap, CSS, HTML.
+
+- name: "IIT Madras"
+  place: "Indian Institute Of Technology Madras"
+  website: "http://www.iitm.ac.in/"
+  icon: 'icon-book'
+  title: 'Undergraduate Education'
+  date: 'Present'
+  desc: >
+          Now I am a student at IIT Madras, Chennai, India. Major in Engineering Design.
