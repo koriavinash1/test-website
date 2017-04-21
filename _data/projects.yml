@@ -1,0 +1,6 @@
+# - name: 'IMDB GraphQL'
+#   url: 'https://github.com/lucasschejtman/imdb-graphql-flow'
+#   img: 'static/img/landing/graphql.png'
+#   desc: >
+#           A GraphQL wrapper for some of the unofficial IMDB APIs.
+#           <br /><strong>JS, Ramda, FlowType</strong>
