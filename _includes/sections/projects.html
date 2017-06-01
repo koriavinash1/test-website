@@ -8,9 +8,9 @@
     <div class="row" style="height: 200px; overflow: auto; overflow-y: hidden; -ms-overflow-y: hidden;">
       {% for project in site.data.projects %}
         {% assign loopindex = forloop.index | modulo: 2 %}
-        <div class="col-sm-4 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
+        <div class="wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
             <div class="team-member">
-                <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-thumbnail img-md" alt="" style="height: 150px; width: 200px">
+                <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-thumbnail img-md" alt="" style="height: 200px; width: 250px">
                 <h4><a href="{{ project.url }}" target="blank" style="color: #1ab394" class="navy">{{ project.name }}</a></h4>
                 <p><span>{{ project.desc }}</span></p>
             </div>
