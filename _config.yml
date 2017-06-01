@@ -33,7 +33,7 @@ sections:
   - id: "career"
     name: "Career"
     tpl: "timeline.html"
-  - id: "projects"
+  - id: "Course projects"
     name: "Projects"
     tpl: "projects.html"
 
