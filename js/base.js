@@ -53,15 +53,50 @@ function multipleGraph(type,id,data1,data2,background,labels1, companyname1, com
     }
   });
 }
-var risk_type = 'LOW';
+
 $('#high1').hide();$('#high2').hide();$('#low1').hide();$('#low2').hide();$('#mid1').hide();$('#mid2').hide();
+$('#labelcomp1').hide();$('#labelcomp2').hide();$('#comparebtn').hide();$('#errtbid').hide();
 $("#risktype").change(function()
 { 
+  $('#labelcomp1').show();$('#labelcomp2').show();$('#comparebtn').show();$('#errtbid').show(); 
      risk_type = $(this).val();
      if(risk_type == 'HIGH'){ $('#high1').show();$('#high2').show();$('#low1').hide();$('#low2').hide();$('#mid1').hide();$('#mid2').hide();}
      else if(risk_type == 'MID'){$('#high1').hide();$('#high2').hide();$('#low1').hide();$('#low2').hide();$('#mid1').show();$('#mid2').show();}
      else if(risk_type == 'LOW'){$('#high1').hide();$('#high2').hide();$('#low1').show();$('#low2').show();$('#mid1').hide();$('#mid2').hide();} 
 });
+
+
+$('#errormodel').append([
+  '<thead><tr><th>Company</th><th>MAPE</th><th>RMSE</th></tr></thead>',
+  '<tbody>',
+  '<tr>',
+    '<td>VEDL</td>',
+    '<td>'+VEDL_MAPE+'</td>',
+    '<td>'+VEDL_RMSE+'</td>',
+  '</tr>',
+  '<tr>',
+    '<td>BPCL</td>',
+    '<td>'+BPCL_MAPE+'</td>',
+    '<td>'+BPCL_RMSE+'</td>',
+  '</tr>',
+  '<tr>',
+    '<td>RELIANCE</td>',
+    '<td>'+RELIANCE_MAPE+'</td>',
+    '<td>'+RELIANCE_RMSE+'</td>',
+  '</tr>',
+  '<tr>',
+    '<td>HINDALCO</td>',
+    '<td>'+HINDALCO_MAPE+'</td>',
+    '<td>'+HINDALCO_RMSE+'</td>',
+  '</tr>',
+  '<tr>',
+    '<td>YESBANK</td>',
+    '<td>'+YESBANK_MAPE+'</td>',
+    '<td>'+YESBANK_RMSE+'</td>',
+  '</tr>',
+  '</tbody>'
+].join(''));
+
 
 $('#stockbtn').click(function(){
   var companyname = $('#stockCompany').val();

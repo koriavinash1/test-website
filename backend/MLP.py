@@ -141,12 +141,12 @@ def run_model(init, output, saver, IS_RESTORE_BASED, company_str, company, epoch
 
 				if company.train.epochs_completed == epochs - 1:
 					p_valfile = open("../graphdata/"+company_str+"_pval.js", "w")
-					p_valfile.write("val " + company_str + "_total_error = " + total_error + ";")
-					p_valfile.write("val " + company_str + "_unexplained_error = " + unexplained_error + ";")
-					p_valfile.write("val " + company_str + "_R_squared = " + R_squared + ";")
-					p_valfile.write("val " + company_str + "_R = " + R + ";")
-					p_valfile.write("val " + company_str + "_MAPE = " + MAPE + ";")
-					p_valfile.write("val " + company_str + "_RMSE = " + RMSE + ";")
+					p_valfile.write("var " + company_str + "_total_error = " + str(te) + ";")
+					p_valfile.write("var " + company_str + "_unexplained_error = " + str(une) + ";")
+					p_valfile.write("var " + company_str + "_R_squared = " + str(rsq) + ";")
+					p_valfile.write("var " + company_str + "_R = " + str(r) + ";")
+					p_valfile.write("var " + company_str + "_MAPE = " + str(mape) + ";")
+					p_valfile.write("var " + company_str + "_RMSE = " + str(rmse) + ";")
 					p_valfile.close()
 
 			print "Optimization Completed. Training time:  {}sec".format(time.time() - train_start)	
