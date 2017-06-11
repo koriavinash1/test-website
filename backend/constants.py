@@ -1,5 +1,5 @@
 batch_size = 25
-epochs = 5000
+epochs = 500
 dropout = 1.0
 variables_device = "/cpu:0"
 processing_device = "/cpu:0"
@@ -11,4 +11,4 @@ prediction_length = 2
 
 IS_RESTORE_BASED = False
 
-IS_FIRST_RUN = True
+IS_FIRST_RUN = False

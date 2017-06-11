@@ -66,36 +66,9 @@ $("#risktype").change(function()
 });
 
 
-$('#errormodel').append([
-  '<thead><tr><th>Company</th><th>MAPE</th><th>RMSE</th></tr></thead>',
-  '<tbody>',
-  '<tr>',
-    '<td>VEDL</td>',
-    '<td>'+VEDL_MAPE+'</td>',
-    '<td>'+VEDL_RMSE+'</td>',
-  '</tr>',
-  '<tr>',
-    '<td>BPCL</td>',
-    '<td>'+BPCL_MAPE+'</td>',
-    '<td>'+BPCL_RMSE+'</td>',
-  '</tr>',
-  '<tr>',
-    '<td>RELIANCE</td>',
-    '<td>'+RELIANCE_MAPE+'</td>',
-    '<td>'+RELIANCE_RMSE+'</td>',
-  '</tr>',
-  '<tr>',
-    '<td>HINDALCO</td>',
-    '<td>'+HINDALCO_MAPE+'</td>',
-    '<td>'+HINDALCO_RMSE+'</td>',
-  '</tr>',
-  '<tr>',
-    '<td>YESBANK</td>',
-    '<td>'+YESBANK_MAPE+'</td>',
-    '<td>'+YESBANK_RMSE+'</td>',
-  '</tr>',
-  '</tbody>'
-].join(''));
+$('#errormodel').html(
+  '<tr><td>VEDL</td><td>'+VEDL_MAPE+
+  '</td><td>'+VEDL_RMSE+'</td></tr><tr><td>BPCL</td><td>'+BPCL_MAPE+'</td><td>'+BPCL_RMSE+'</td></tr><tr><td>RELIANCE</td><td>'+RELIANCE_MAPE+'</td><td>'+RELIANCE_RMSE+'</td></tr><tr><td>HINDALCO</td><td>'+HINDALCO_MAPE+'</td><td>'+HINDALCO_RMSE+'</td></tr><tr><td>YESBANK</td><td>'+YESBANK_MAPE+'</td><td>'+YESBANK_RMSE+'</td></tr>');
 
 
 $('#stockbtn').click(function(){
